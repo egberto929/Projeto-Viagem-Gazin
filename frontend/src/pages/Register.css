@@ -1,0 +1,56 @@
+/* src/components/Register.css */
+
+.register-container {
+  background: linear-gradient(135deg, #003366, #0066cc); /* Gradiente azul escuro para azul claro */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-page {
+  max-width: 500px;
+  padding: 20px;
+  background: #ffffff; /* Fundo branco para o card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais leve */
+  margin: 0;
+  width: 400px;
+}
+
+.register-page h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #003366; /* Azul escuro para o título */
+}
+
+.register-page label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #003366; /* Azul escuro para os labels */
+}
+
+.register-page input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Cinza claro para bordas */
+  border-radius: 4px;
+}
+
+.register-page button {
+  width: 100%;
+  padding: 10px;
+  background: #3399ff; /* Azul claro para o botão */
+  color: #ffffff; /* Texto branco para o botão */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-page button:hover {
+  background: #007bff; /* Azul mais escuro ao passar o mouse */
+}
