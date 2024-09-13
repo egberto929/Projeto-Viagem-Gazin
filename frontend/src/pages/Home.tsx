@@ -78,3 +78,15 @@ const Home: React.FC = () => {
 export default Home;
 
 
+
+const MeuComponente = () => {
+    const urlDaImagem = "";
+
+    return (
+        <div>
+            <img src={urlDaImagem} alt="Descrição da imagem" />
+        </div>
+    );
+}
+
+export default MeuComponente;

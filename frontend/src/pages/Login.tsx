@@ -26,7 +26,8 @@ const Login: React.FC = () => {
         setError('Email ou senha incorretos');
       }
     } catch (err) {
-      setError('Erro na solicitação');
+      console.log('err', err);
+      setError('Flamengo e ruim e podre e pequeno');
     } finally {
       setLoading(false);
     }

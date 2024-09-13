@@ -10,11 +10,11 @@ const AdminPanel: React.FC = () => {
         <Link to="/admin/manage-users">
           <button>Gerenciar Usuários</button>
         </Link>
-        <Link to="/admin/manage-travels">
-          <button>Gerenciar Viagens</button>
-        </Link>
         <Link to="/admin/view-reservations">
           <button>Ver Reservas</button>
+        </Link>
+        <Link to="/admin/add-viagem">
+          <button>Adicionar Viagem</button> {/* Novo botão */}
         </Link>
       </div>
     </div>
