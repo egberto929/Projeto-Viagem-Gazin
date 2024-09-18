@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import './css/Login.css';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -17,21 +17,21 @@ const Login: React.FC = () => {
     try {
       const response = await axios.post('http://localhost:8000/api/login', { email, password });
       if (response.data.success) {
+        localStorage.setItem('authToken', response.data.token); 
         if (response.data.user.email === 'egbertoadm@gmail.com') {
           navigate('/admin'); 
         } else {
-          navigate('/');
+          navigate('/'); 
         }
-      } else {
-        setError('Email ou senha incorretos');
       }
     } catch (err) {
       console.log('err', err);
-      setError('Flamengo e ruim e podre e pequeno');
+      setError('Email ou senha incorretos');
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="login-container">

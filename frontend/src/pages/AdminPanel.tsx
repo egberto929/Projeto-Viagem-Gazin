@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './AdminPanel.css';
+import './css/AdminPanel.css';
 
 const AdminPanel: React.FC = () => {
   return (
@@ -12,9 +12,6 @@ const AdminPanel: React.FC = () => {
         </Link>
         <Link to="/admin/view-reservations">
           <button>Ver Reservas</button>
-        </Link>
-        <Link to="/admin/add-viagem">
-          <button>Adicionar Viagem</button> {/* Novo botão */}
         </Link>
       </div>
     </div>

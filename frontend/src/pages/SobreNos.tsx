@@ -1,12 +1,18 @@
 import React from 'react';
-import './SobreNos.css';
+import './css/SobreNos.css';
+import { Link } from 'react-router-dom';
 
 const SobreNos: React.FC = () => {
     return (
         <div className="sobre-nos">
-            <header className="sobre-nos-header">
+            <header className="home-header">
                 <h1>Sobre Nós</h1>
                 <p>Conheça nossa história e valores!</p>
+                <nav className="header-nav">
+                    <ul className="nav-list">
+                        <li><Link to="/" className="nav-link">Voltar</Link></li>
+                    </ul>
+                </nav>
             </header>
             <section className="introducao">
                 <h2>Bem-vindo à Nexus Turismo</h2>
@@ -17,6 +23,7 @@ const SobreNos: React.FC = () => {
                     Nossa equipe de especialistas está sempre pronta para ajudar você a encontrar o destino perfeito e planejar cada detalhe da sua viagem, garantindo que você tenha uma experiência memorável e sem preocupações.
                 </p>
             </section>
+            {/* O restante do código permanece o mesmo */}
             <section className="nossa-historia">
                 <h2>Nossa História</h2>
                 <p>
@@ -33,19 +40,19 @@ const SobreNos: React.FC = () => {
                 </p>
                 <div className="membros-equipe">
                     <div className="membro">
-                        <img src="https://via.placeholder.com/150" alt="João Silva" />
+                        <img src="https://img.freepik.com/vetores-premium/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg" alt="João Silva" />
                         <h3>João Silva</h3>
                         <p>Fundador e CEO</p>
                         <p>João é o visionário por trás da Nexus Turismo. Com uma paixão por explorar novos destinos e criar experiências inesquecíveis, ele lidera nossa equipe com um compromisso inabalável com a excelência.</p>
                     </div>
                     <div className="membro">
-                        <img src="https://via.placeholder.com/150" alt="Maria Oliveira" />
+                        <img src="https://img.freepik.com/vetores-premium/perfil-de-avatar-de-mulher-no-icone-redondo_24640-14042.jpg" alt="Maria Oliveira" />
                         <h3>Maria Oliveira</h3>
                         <p>Especialista em Destinos Internacionais</p>
                         <p>Maria é nossa especialista em destinos internacionais, com um conhecimento profundo sobre culturas e atrações ao redor do mundo. Ela está aqui para ajudar você a encontrar o destino perfeito para suas férias dos sonhos.</p>
                     </div>
                     <div className="membro">
-                        <img src="https://via.placeholder.com/150" alt="Pedro Santos" />
+                        <img src="https://img.freepik.com/vetores-premium/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg" alt="Pedro Santos" />
                         <h3>Pedro Santos</h3>
                         <p>Consultor de Turismo</p>
                         <p>Pedro é um consultor experiente que se dedica a criar roteiros personalizados para atender às suas necessidades e preferências. Ele está sempre pronto para oferecer conselhos e recomendações para garantir uma viagem perfeita.</p>
@@ -83,15 +90,6 @@ const SobreNos: React.FC = () => {
                     <li>Email: <a href="mailto:contato@nexusturismo.com">contato@nexusturismo.com</a></li>
                     <li>Telefone: <a href="tel:+1112345678">(11) 1234-5678</a></li>
                 </ul>
-                <form>
-                    <label htmlFor="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required />
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-                    <label htmlFor="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows={4} required />
-                    <button type="submit">Enviar</button>
-                </form>
             </section>
             <footer className="home-footer">
                 <p>&copy; 2024 Nexus Turismo. Todos os direitos reservados.</p>

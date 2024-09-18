@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './ManageUsers.css'; // Certifique-se de que o caminho está correto
+import './css/ManageUsers.css'; // Certifique-se de que o caminho está correto
 
 const ManageUsers: React.FC = () => {
   const [users, setUsers] = useState<any[]>([]);
