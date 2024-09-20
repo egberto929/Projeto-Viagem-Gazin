@@ -30,7 +30,7 @@ const Register: React.FC = () => {
         senha_confirmation: confirmaSenha,
       });
       setMensagem(response.data.message);
-      navigate('/');  // Redireciona para a página inicial
+      navigate('/');  
     } catch (error) {
       if (axios.isAxiosError(error)) {
         setErro(error.response?.data.message || 'Erro ao cadastrar');

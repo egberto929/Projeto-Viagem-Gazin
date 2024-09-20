@@ -2,12 +2,13 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ViagemController;
+
+
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ReservaController;
 
 Route::post('/login', [LoginController::class, 'login']);
 
@@ -24,6 +25,11 @@ Route::get('users', [UserController::class, 'index']);
 // Rota para remover um usuário
 Route::delete('users/{id}', [UserController::class, 'destroy']);
 
-Route::post('/viagens', [ViagemController::class, 'store']);
+
+Route::post('/reservas', [ReservaController::class, 'store']);
+
+Route::get('/reservas', [ReservaController::class, 'index']);
+
+
 
 

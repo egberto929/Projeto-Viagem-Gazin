@@ -1,0 +1,76 @@
+/* Estilo geral para o container de reservas */
+.view-reservations-container {
+  padding: 20px;
+  background-color: #003366; /* Azul claro para o fundo */
+  border-radius: 8px;
+  max-width: 800px; /* Largura máxima do container */
+  margin: 100px auto; /* Margem superior e centraliza horizontalmente */
+  display: flex;
+  flex-direction: column; /* Organiza os filhos em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff; /* Texto em branco para contraste */
+}
+
+.reservations-table {
+  width: 100%; /* Ocupa toda a largura do container */
+  border-collapse: collapse;
+}
+
+.reservations-table th,
+.reservations-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: #fff; /* Texto em branco nas células */
+}
+
+.reservations-table th {
+  background-color: #0288d1; /* Azul médio para o cabeçalho */
+  text-align: left;
+}
+
+.reservations-table tr:nth-child(even) {
+  background-color: #0277bd; /* Azul mais escuro para linhas pares */
+}
+
+.reservations-table tr:hover {
+  background-color: #005f86; /* Azul ainda mais escuro ao passar o mouse */
+}
+
+
+
+.carregando {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  height: 100vh; /* Faz a altura ocupar toda a tela */
+}
+
+
+
+.loader {
+  border: 8px solid #f3f3f3; /* Cor clara para o fundo do spinner */
+  border-top: 8px solid #0288d1; /* Cor azul do spinner */
+  border-radius: 50%;
+  width: 50px; /* Tamanho do spinner */
+  height: 50px; /* Tamanho do spinner */
+  animation: spin 1s linear infinite; /* Animação de rotação */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  text-align: center; /* Centraliza o texto */
+  color: #fff; /* Cor do texto */
+  margin-top: 10px; /* Espaço entre o spinner e o texto */
+}
+

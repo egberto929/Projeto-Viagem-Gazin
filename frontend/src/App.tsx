@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import SobreNos from './pages/SobreNos';
 import AdminPanel from './pages/AdminPanel';
 import ManageUsers from './pages/ManageUsers';
+import ViewReservations from './pages/ViewReservations';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/sobre-nos" element={<SobreNos />} />
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="/admin/manage-users" element={<ManageUsers />} />
+        <Route path="/admin/view-reservations" element={<ViewReservations />} />
       </Routes>
     </Router>
   );

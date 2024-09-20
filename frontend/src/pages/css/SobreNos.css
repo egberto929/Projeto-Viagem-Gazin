@@ -1,0 +1,131 @@
+/* src/components/SobreNos.css */
+
+.sobre-nos {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.img-redonda {
+    width: 90px;  
+    height: 90px; 
+    border-radius: 100%; 
+    object-fit: cover; 
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+      
+.introducao, .nossa-historia, .equipe, .valores, .roteiro, .contato {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.introducao h2, .nossa-historia h2, .valores h2, .roteiro h2, .contato h2 {
+    font-size: 1.8rem;
+    color: #000; /* Preto para os títulos */
+}
+
+.equipe h2 {
+    color:  #ddd;
+}
+
+.introducao p, .nossa-historia p, .valores ul, .roteiro ul, .contato p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.equipe {
+    background: #003366; /* Verde escuro para a seção equipe */
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff; /* Texto branco */
+}
+
+.membros-equipe {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.membro {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.membro img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.membro h3 {
+    margin: 10px 0 5px;
+}
+
+.valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.valores li {
+    background: #003366; /* Dourado para os itens da lista de valores */
+    color:  #ddd; /* Texto preto */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.roteiro ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roteiro li {
+    margin-bottom: 10px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato label {
+    font-weight: bold;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contato button {
+    background: #003366; /* Dourado para o botão de envio */
+    color: #ddd; /* Texto preto */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contato button:hover {
+    background: #003366; /* Tom mais escuro de dourado ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .membros-equipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membro {
+        min-width: 100%;
+    }
+}
+
+

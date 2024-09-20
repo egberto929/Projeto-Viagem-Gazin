@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './css/ManageUsers.css'; // Certifique-se de que o caminho está correto
+import './css/ManageUsers.css'; 
 
 const ManageUsers: React.FC = () => {
   const [users, setUsers] = useState<any[]>([]);
@@ -35,7 +35,14 @@ const ManageUsers: React.FC = () => {
     }
   };
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) {
+    return (
+      <div className='carregando'>
+        <div className="loader"></div>
+        <p className="loading-text">Carregando usuários...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="manage-users-container">

@@ -1,0 +1,116 @@
+/* Estilo geral para o container de gerenciamento de usuários */
+.manage-users-container {
+  padding: 20px;
+  background: #003366; /* Azul claro para o fundo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Largura máxima do container */
+  margin: 100px auto; /* Margem superior e centraliza horizontalmente */
+  display: flex;
+  flex-direction: column; /* Organiza os filhos em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo do cabeçalho do gerenciamento de usuários */
+.manage-users-header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ddd; /* Azul escuro para o texto */
+}
+
+/* Estilo para a lista de usuários */
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Ocupa toda a largura do container */
+}
+
+/* Estilo para os itens da lista de usuários */
+.user-list-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para os itens da lista de usuários */
+.user-list-item:hover {
+  background-color: #b3e5fc; /* Azul claro mais intenso ao passar o mouse */
+}
+
+/* Estilo para o botão de remoção */
+.remove-button {
+  background-color: #0288d1; /* Azul médio para o botão */
+  color: #fff; /* Texto branco */
+  border: none;
+  padding: 2px 6px; /* Ajuste para tornar o botão menor */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75em; /* Tamanho da fonte menor */
+  line-height: 1; /* Ajusta a altura da linha para o texto centralizar melhor */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 80px; /* Define a largura do botão para garantir que ele não fique largo */
+  text-align: center; /* Centraliza o texto no botão */
+}
+
+/* Efeito hover para o botão de remoção */
+.remove-button:hover {
+  background-color: #0277bd; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilo para o foco do botão de remoção */
+.remove-button:focus {
+  outline: none;
+}
+
+/* Animação para a remoção do usuário */
+.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+
+.carregando {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  height: 100vh; /* Faz a altura ocupar toda a tela */
+}
+
+
+
+.loader {
+  border: 8px solid #f3f3f3; /* Cor clara para o fundo do spinner */
+  border-top: 8px solid #0288d1; /* Cor azul do spinner */
+  border-radius: 50%;
+  width: 50px; /* Tamanho do spinner */
+  height: 50px; /* Tamanho do spinner */
+  animation: spin 1s linear infinite; /* Animação de rotação */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  text-align: center; /* Centraliza o texto */
+  color: #fff; /* Cor do texto */
+  margin-top: 10px; /* Espaço entre o spinner e o texto */
+}
