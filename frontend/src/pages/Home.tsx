@@ -80,8 +80,8 @@ const Home: React.FC = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('authToken'); // Remove o token de autenticação
-    setIsLoggedIn(false); // Atualiza o estado para deslogado
+    localStorage.removeItem('authToken'); 
+    setIsLoggedIn(false);
     alert('Você saiu da sua conta.');
   };
 
