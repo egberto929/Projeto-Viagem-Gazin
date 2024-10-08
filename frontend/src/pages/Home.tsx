@@ -38,8 +38,6 @@ const Home: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
 
-  
-
   useEffect(() => {
     
     const token = localStorage.getItem('authToken');
@@ -56,7 +54,6 @@ const Home: React.FC = () => {
     setSelectedViagem(null);
   };
 
-  
   const handleConfirmReservation = async () => {
     if (!isLoggedIn) {
       alert('Você precisa estar logado para confirmar a reserva.');
@@ -85,9 +82,6 @@ const Home: React.FC = () => {
     alert('Você saiu da sua conta.');
   };
 
-
-
-  
   return (
     <div className="home">
       <header className="home-header">
@@ -173,8 +167,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-
-
-
-
-

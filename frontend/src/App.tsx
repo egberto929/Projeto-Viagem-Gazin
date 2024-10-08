@@ -7,6 +7,7 @@ import SobreNos from './pages/SobreNos';
 import AdminPanel from './pages/AdminPanel';
 import ManageUsers from './pages/ManageUsers';
 import ViewReservations from './pages/ViewReservations';
+import AdicionarViagem from './pages/AdicionarViagem';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="/admin/manage-users" element={<ManageUsers />} />
         <Route path="/admin/view-reservations" element={<ViewReservations />} />
+        <Route path="/admin/adicionar-viagem" element={<AdicionarViagem/>} />
       </Routes>
     </Router>
   );

@@ -13,10 +13,12 @@ const AdminPanel: React.FC = () => {
         <Link to="/admin/view-reservations">
           <button>Ver Reservas</button>
         </Link>
+        <Link to="/admin/adicionar-viagem">
+          <button>Adicionar Viagem</button>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default AdminPanel;
-
